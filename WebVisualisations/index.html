@@ -1,64 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <a class="navbar-brand" href="index.html">Latitude</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown active">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Plots
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="latvsmaxtemp.html">Max Temperature</a>
-                <a class="dropdown-item" href="latvshumidity.html">Humidity</a>
-                <a class="dropdown-item" href="latvscloudiness.html">Cloudiness</a>
-                <a class="dropdown-item" href="latvswindspeed.html">Wind Speed</a>
-              </div>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="comparisons.html">Comparison</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="data.html">Data</a>
-            </li>
-          </ul>
-        </div>
-    </nav>
-
-    <div class="latitude-vs-x">
-        <h1>Summary: Latitude vs. X</h1>
-        <hr>
-        <div class="landing-information">
-            <img class="pic-lat-temp-landing" src="../Resources/assets/images/Fig1.png" alt="City Latitude vs. Max Temp">
-            <div class="landing-para">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <p class="landing-p-1">
-                    The purpose of this project was to analyse how weather changes as you get closer to the equator. To accomplish this analysis we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
-                </p>
-                <p>
-                    After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualisations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
-                </p>
-            </div>
-        </div>
+  <nav class="navbar navbar-expand-sm">
+    <a class="navbar-brand" href="index.html">Latitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fa fa-bars" style="font-size:24px; opacity: 0.3"></i></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="latvsmaxtemp.html">Max Temperature</a>
+            <a class="dropdown-item" href="latvshumidity.html">Humidity</a>
+            <a class="dropdown-item" href="latvscloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="latvswindspeed.html">Wind Speed</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comparisons.html">Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
+      </ul>
     </div>
+  </nav>
 
+  <div class="container-fluid">
+    <div class="row">
+      <div id="landing-info" style="background:white" class="col-lg-7 col md-7 col-sm-12">
+        <h1> Summary: Latitude vs. X</h1>
+        <hr>
+        <a href="latvsmaxtemp.html">
+            <img class="float-left mr-4 about-img img-responsive" width="50%" src="../Resources/assets/images/Fig1.png">
+        </a>
+        <br>
+        <p>
+          The purpose of this project was to analyse how weather changes as you get closer to the equator. To accomplish this analysis we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+        </p>
+        <br>
+        <br>
+        <p>
+          After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualisations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+        </p>
+      </div>
+      <div id="landing-visualisations" style="background:white" class="col-lg-4 col md-4 col-sm-12">
+        <h2>Visualisations</h2>
+        <hr>
+        <a href="latvsmaxtemp.html"><img src="../Resources/assets/images/Fig1.png" class="img-responsive float-lg" ></a>
+        <a href="latvshumidity.html"><img src="../Resources/assets/images/Fig2.png" class="img-responsive float-lg"></a>
+        <a href="latvscloudiness.html"><img src="../Resources/assets/images/Fig3.png" class="img-responsive float-lg"></a>
+        <a href="latvswindspeed.html"><img src="../Resources/assets/images/Fig4.png" class="img-responsive float-lg"></a>
+      </div>
+    </div>
+  </div>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
