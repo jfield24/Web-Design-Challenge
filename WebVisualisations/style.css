@@ -26,19 +26,26 @@ body{
 p{
     font-size: 20px;
 }
+
 h1{
     color: rgb(57, 150, 179);
     font-family: "Georgia";
-    font-weight: "bolder";
+    font-weight: bolder;
     font-size: 40px;
 }
+
 h2{
     color:rgb(57, 150, 179);
     font-family: "Georgia";
-    font-weight: "bolder";
+    font-weight: bolder;
 }
 
-img{
+#img-landing{
+    display: inline-block;
+    width: 45%;
+}
+
+#small-vis-img{
     display: inline-block;
     width: 45%;
 }
@@ -57,12 +64,23 @@ img{
     padding-top: 70px;
 }
 
+#vis-visualisations{
+    margin: 140px 60px 500px 0px;
+    padding-left: 60px;
+    padding-top: 70px;
+}
+
 .dropdown-item{
     color:black;
 }
 
 .navbar-nav a{
     color: black;
+}
+
+#max-vis{
+    display: inline-block;
+    width: 100%;
 }
 
 /**Background for media query*/
@@ -74,6 +92,9 @@ img{
         margin: 0 auto;
     }
     #landing-visualisations{
+        margin: 0 auto;
+    }
+    #vis-visualisations{
         margin: 0 auto;
     }
     .navbar{
