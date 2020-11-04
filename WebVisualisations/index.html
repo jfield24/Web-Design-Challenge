@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
@@ -38,11 +39,11 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div id="landing-info" style="background:white" class="col-lg-7 col md-7 col-sm-12">
+      <div id="landing-info" style="background:white" class="col-lg-7 col-md-8 col-sm-12">
         <h1> Summary: Latitude vs. X</h1>
         <hr>
-        <a href="latvsmaxtemp.html">
-            <img class="float-left mr-4 about-img img-responsive" width="50%" src="../Resources/assets/images/Fig1.png">
+        <a href="../Resources/assets/images/Fig1.png">
+            <img class="float-left mr-4 about-img img-responsive" src="../Resources/assets/images/Fig1.png" alt="Lat vs.Max Temp">
         </a>
         <br>
         <p>
@@ -54,16 +55,18 @@
           After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualisations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
         </p>
       </div>
-      <div id="landing-visualisations" style="background:white" class="col-lg-4 col md-4 col-sm-12">
+      <div id="landing-visualisations" style="background:white" class="col-lg-4">
         <h2>Visualisations</h2>
         <hr>
-        <a href="latvsmaxtemp.html"><img src="../Resources/assets/images/Fig1.png" class="img-responsive float-lg" ></a>
-        <a href="latvshumidity.html"><img src="../Resources/assets/images/Fig2.png" class="img-responsive float-lg"></a>
-        <a href="latvscloudiness.html"><img src="../Resources/assets/images/Fig3.png" class="img-responsive float-lg"></a>
-        <a href="latvswindspeed.html"><img src="../Resources/assets/images/Fig4.png" class="img-responsive float-lg"></a>
+        <a href="../Resources/assets/images/Fig1.png"><img src="../Resources/assets/images/Fig1.png" class="img-responsive float-lg" alt="lat vs. max temp sml"></a>
+        <a href="../Resources/assets/images/Fig2.png"><img src="../Resources/assets/images/Fig2.png" class="img-responsive float-lg" alt="latvshumidity"></a>
+        <a href="../Resources/assets/images/Fig3.png"><img src="../Resources/assets/images/Fig3.png" class="img-responsive float-lg" alt="latvscloudiness"></a>
+        <a href="../Resources/assets/images/Fig4.png"><img src="../Resources/assets/images/Fig4.png" class="img-responsive float-lg" alt="latvswindspeed"></a>
       </div>
     </div>
   </div>
+
+
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

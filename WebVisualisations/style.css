@@ -45,15 +45,15 @@ img{
 
 #landing-info{
     margin: 140px 30px 160px 60px;
-    padding-left: 40px;
+    padding-left: 60px;
     padding-right: 80px;
     padding-top: 60px;
     padding-bottom: 40px;
 }
 
 #landing-visualisations{
-    margin: 140px 60px 160px 0px;
-    padding-left: 40px;
+    margin: 140px 60px 140px 0px;
+    padding-left: 60px;
     padding-top: 70px;
 }
 
